@@ -1,0 +1,163 @@
+/** 
+minor third
+11.11px, 13.33px, 16px, 
+19.2px, 23.04px, 28.65px, 
+33.18px, 39.81px, 47.78px
+
+multiples of 16:
+4,  8,  12, 16, 24, 32
+48, 60, 76, 92, 108
+
+main: #f08c00
+grey: #343a40
+
+main-shade-1: #D87E00
+main-tint-1: #F2981A
+background: #f8f9fa;
+background-shade-1: #e9ecef;
+background-shade-2: #ced4da;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16px;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #343a40;
+}
+
+ul {
+  list-style: none;
+}
+
+.main {
+  max-width: 875px;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.main__color_main {
+  color: #f08c00;
+}
+
+.main__content {
+  flex: 1 1 auto;
+}
+
+.main__content-section {
+  margin-bottom: 32px;
+}
+
+.main__content-subsection {
+  margin-bottom: 24px;
+}
+
+.main__headline-1 {
+  font-size: 28.65px;
+  margin-bottom: 24px;
+}
+
+.main__headline-2 {
+  font-size: 23.04px;
+  margin-bottom: 16px;
+}
+
+.main__headline-3 {
+  font-size: 19.2px;
+  margin-bottom: 4px;
+}
+
+.main__person {
+  background-color: #495057;
+  color: #f8f9fa;
+}
+
+.main__person-img {
+  aspect-ratio: 2 / 2;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.main__person-item {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 11.11px;
+  margin-bottom: 6px;
+}
+
+.main__person-name {
+  letter-spacing: -1.2px;
+  font-size: 28.65px;
+  line-height: 1;
+}
+
+.main__person-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-content: start;
+  gap: 16px;
+  margin-bottom: 23.04px;
+}
+
+.main__person, .main__skills {
+  padding-left: 11.11px;
+  padding-right: 11.11px;
+}
+
+.main__content, .main__person, .main__skills {
+  padding-bottom: 23.04px;
+  padding-top: 23.04px;
+}
+
+.main__skillset:not(:last-child) {
+  margin-bottom: 23.04px;
+}
+
+.main__skillset-headline {
+  margin-bottom: 11.11px;
+}
+
+.main__skillset-item {
+  margin-bottom: 4px;
+}
+
+.main__summary {
+  flex: 0 0 auto;
+  background-color: #ced4da;
+  max-width: 275px;
+}  
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+
+  width: 24px;
+  height: 24px;
+}
+
+.text__length_m {
+  line-height: 1.5;
+}
