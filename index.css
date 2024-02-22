@@ -93,8 +93,8 @@ ul {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  gap: 11.11px;
-  margin-bottom: 6px;
+  gap: 8px;
+  margin-bottom: 12px;
 }
 
 .main__person-name {
@@ -108,7 +108,7 @@ ul {
   display: flex;
   flex-flow: row nowrap;
   gap: 16px;
-  margin-bottom: 23.04px;
+  margin-bottom: 24px;
 }
 
 .main__skills {
@@ -118,13 +118,13 @@ ul {
 }
 
 .main__person, .main__skills {
-  padding-left: 11.11px;
-  padding-right: 11.11px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .main__content, .main__person, .main__skills {
-  padding-bottom: 23.04px;
-  padding-top: 23.04px;
+  padding-bottom: 24px;
+  padding-top: 24px;
 }
 
 .main__skillset {
@@ -132,7 +132,7 @@ ul {
 }
 
 .main__skillset-headline {
-  margin-bottom: 11.11px;
+  margin-bottom: 12px;
 }
 
 .main__skillset-item {
@@ -180,7 +180,7 @@ ul {
   }
 
   .main__skillset:not(:last-child) {
-    margin-bottom: 23.04px;
+    margin-bottom: 24px;
   }
 
   .main__summary {
