@@ -112,6 +112,7 @@ ul {
 }
 
 .main__skills {
+  background-color: #ced4da;
   display: flex;
   flex-flow: row;
   gap: 24px;
@@ -139,10 +140,6 @@ ul {
   margin-bottom: 4px;
 }
 
-.main__summary {
-  background-color: #ced4da;
-}  
-
 .main__content {
   margin-left: 16px;
   margin-right: 16px;
@@ -168,7 +165,7 @@ ul {
     max-width: 875px;
     margin: 0 auto;
     display: flex;
-    align-items: stretch;
+    align-items: start;
   }
   
   .main__content {
@@ -186,5 +183,7 @@ ul {
   .main__summary {
     flex: 0 0 auto;
     max-width: 275px;
+    position: sticky;
+    top: 0;
   }
 }
