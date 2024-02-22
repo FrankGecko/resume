@@ -48,19 +48,11 @@ ul {
 }
 
 .main {
-  max-width: 875px;
-  margin: 0 auto;
-  display: flex;
-  align-items: stretch;
-  gap: 16px;
+  min-width: 300px;
 }
 
 .main__color_main {
   color: #f08c00;
-}
-
-.main__content {
-  flex: 1 1 auto;
 }
 
 .main__content-section {
@@ -93,8 +85,8 @@ ul {
 
 .main__person-img {
   aspect-ratio: 2 / 2;
-  width: 100%;
   border-radius: 100%;
+  width: 80px;
 }
 
 .main__person-item {
@@ -107,16 +99,22 @@ ul {
 
 .main__person-name {
   letter-spacing: -1.2px;
+  flex-grow: 1;
   font-size: 28.65px;
   line-height: 1;
 }
 
 .main__person-row {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-content: start;
+  display: flex;
+  flex-flow: row nowrap;
   gap: 16px;
   margin-bottom: 23.04px;
+}
+
+.main__skills {
+  display: flex;
+  flex-flow: row;
+  gap: 24px;
 }
 
 .main__person, .main__skills {
@@ -129,8 +127,8 @@ ul {
   padding-top: 23.04px;
 }
 
-.main__skillset:not(:last-child) {
-  margin-bottom: 23.04px;
+.main__skillset {
+  flex: 1 0 1px;
 }
 
 .main__skillset-headline {
@@ -142,10 +140,13 @@ ul {
 }
 
 .main__summary {
-  flex: 0 0 auto;
   background-color: #ced4da;
-  max-width: 275px;
 }  
+
+.main__content {
+  margin-left: 16px;
+  margin-right: 16px;
+}
 
 .material-symbols-outlined {
   font-variation-settings:
@@ -160,4 +161,30 @@ ul {
 
 .text__length_m {
   line-height: 1.5;
+}
+
+@media (min-width: 550px) {
+  .main {
+    max-width: 875px;
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+  }
+  
+  .main__content {
+    flex: 1 1 auto;
+  }
+
+  .main__skills {
+    display: block;
+  }
+
+  .main__skillset:not(:last-child) {
+    margin-bottom: 23.04px;
+  }
+
+  .main__summary {
+    flex: 0 0 auto;
+    max-width: 275px;
+  }
 }
