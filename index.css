@@ -145,6 +145,10 @@ ul {
   margin-right: 16px;
 }
 
+.main__education-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 1,
