@@ -18,136 +18,9 @@ background-shade-1: #e9ecef;
 background-shade-2: #ced4da;
 */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: 16px;
-}
-
-a, a:link, a:visited, a:hover, a:active {
-  color: inherit;
-}
-
-a, a:link, a:visited, a:hover, a:active {
-  text-decoration: none;
-}
-
-body {
-  background-color: #f8f9fa;
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  color: #343a40;
-}
-
-ul {
-  list-style: none;
-}
-
-.main {
-  min-width: 300px;
-}
-
-.main__color_main {
-  color: #f08c00;
-}
-
-.main__content-section {
-  margin-bottom: 32px;
-}
-
-.main__content-subsection {
-  margin-bottom: 24px;
-}
-
-.main__headline-1 {
-  font-size: 28.65px;
-  margin-bottom: 24px;
-}
-
-.main__headline-2 {
-  font-size: 23.04px;
-  margin-bottom: 16px;
-}
-
-.main__headline-3 {
-  font-size: 19.2px;
-  margin-bottom: 4px;
-}
-
-.main__person {
-  background-color: #495057;
-  color: #f8f9fa;
-}
-
-.main__person-img {
-  aspect-ratio: 2 / 2;
-  border-radius: 100%;
-  width: 80px;
-}
-
-.main__person-item {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 12px;
-}
-
-.main__person-name {
-  letter-spacing: -1.2px;
-  flex-grow: 1;
-  font-size: 28.65px;
-  line-height: 1;
-}
-
-.main__person-row {
-  display: flex;
-  flex-flow: row nowrap;
-  gap: 16px;
-  margin-bottom: 24px;
-}
-
-.main__skills {
-  background-color: #ced4da;
-  display: flex;
-  flex-flow: row;
-  gap: 24px;
-}
-
-.main__person, .main__skills {
-  padding-left: 12px;
-  padding-right: 12px;
-}
-
-.main__content, .main__person, .main__skills {
-  padding-bottom: 24px;
-  padding-top: 24px;
-}
-
-.main__skillset {
-  flex: 1 0 1px;
-}
-
-.main__skillset-headline {
-  margin-bottom: 12px;
-}
-
-.main__skillset-item {
-  margin-bottom: 4px;
-}
-
-.main__content {
-  margin-left: 16px;
-  margin-right: 16px;
-}
-
-.main__education-item:not(:last-child) {
-  margin-bottom: 12px;
-}
+/**********************************************************************************************************************
+* third party                                                                                                         *
+**********************************************************************************************************************/
 
 .material-symbols-outlined {
   font-variation-settings:
@@ -160,31 +33,199 @@ ul {
   height: 24px;
 }
 
-.text__length_m {
+/**********************************************************************************************************************
+* global reset                                                                                                        *
+**********************************************************************************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #343a40;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+a, 
+a:link, 
+a:visited, 
+a:hover, 
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+/**********************************************************************************************************************
+* list                                                                                                                *
+**********************************************************************************************************************/
+
+.list__item {
+  margin-bottom: 12px;
+}
+
+.list__item_size_s {
+  margin-bottom: 4px;
+}
+
+/**********************************************************************************************************************
+* page                                                                                                                *
+**********************************************************************************************************************/
+
+.page {
+  min-width: 300px;
+}
+
+.page__headline {
+  font-weight: 700;
+}
+
+.page__headline_1 {
+  font-size: 23.04px;
+  margin-bottom: 16px;
+}
+
+.page__headline_2 {
+  font-size: 19.2px;
+  margin-bottom: 4px;
+}
+
+.page__paragraph {
+  margin-bottom: 12px;
+}
+
+.page__person {
+  padding-bottom: 16px;
+}
+
+.page__section_1 {
+  margin-bottom: 32px;
+}
+
+.page__section_2 {
+  margin-bottom: 24px;
+}
+
+.page__side {
+  background-color: #ced4da;
+}
+
+.page__skills {
+  padding-top: 16px;
+}
+
+.page__body, .page__person, .page__skills {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.page__body, .page__person {
+  padding-top: 24px;
+}
+
+/**********************************************************************************************************************
+* paragraph                                                                                                           *
+**********************************************************************************************************************/
+
+.paragraph {
   line-height: 1.5;
 }
 
+/**********************************************************************************************************************
+* person                                                                                                              *
+**********************************************************************************************************************/
+
+.person {
+  background-color: #495057;
+  color: #f8f9fa;
+}
+
+.person__header {
+  margin-bottom: 20px;
+}
+
+.person__img {
+  aspect-ratio: 2 / 2;
+  border-radius: 100%;
+  width: 80px;
+}
+
+.person__name {
+  letter-spacing: -1.2px;
+  font-size: 28.65px;
+  line-height: 1;
+}
+
+/**********************************************************************************************************************
+* row                                                                                                                 *
+**********************************************************************************************************************/
+
+.row {
+  align-items: start;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 12px;
+}
+
+.row_size_s {
+  align-items: center;
+  gap: 8px;
+}
+
+.row__main {
+  flex-grow: 1;
+}
+
+/**********************************************************************************************************************
+* skills                                                                                                              *
+**********************************************************************************************************************/
+.skills {
+  display: flex;
+  flex-flow: row;
+  gap: 24px;
+}
+
+.skills__set {
+  flex: 1 0 1px;
+}
+
 @media (min-width: 550px) {
-  .main {
+  /********************************************************************************************************************
+  * skills                                                                                                            *
+  ********************************************************************************************************************/
+  
+  .skills {
+    display: block;
+  }
+
+  /********************************************************************************************************************
+  * page                                                                                                              *
+  ********************************************************************************************************************/
+
+  .page {
     max-width: 875px;
     margin: 0 auto;
     display: flex;
     align-items: start;
   }
   
-  .main__content {
+  .page__body {
     flex: 1 1 auto;
   }
 
-  .main__skills {
-    display: block;
-  }
-
-  .main__skillset:not(:last-child) {
-    margin-bottom: 24px;
-  }
-
-  .main__summary {
+  .page__side {
     flex: 0 0 auto;
     max-width: 275px;
     position: sticky;
